@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,637 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* Importing Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: auto;
+  padding: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar a {
+  font-size: 20px;
+  font-weight: 600;
+  color: black !important;
+}
+
+.navbar a:hover {
+  color: lightgreen !important;
+}
+
+.BNavbar {
+  position: relative;
+  float: right !important;
+  width: 100% !important;
+  text-align: right;
+  background: linear-gradient(to top left, transparent 50%, black 0) top
+      left/40px 40px no-repeat,
+    white;
+}
+
+.BNavbar2 {
+  text-align: center;
+  padding: 1px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px black solid;
+  background-color: lightgreen;
+  color: black;
+  margin-left: -20px;
+}
+
+.BNavbar2 h6 {
+  font-size: 10px !important;
+  font-weight: 600;
+}
+
+.BNavbar i:hover {
+  background-color: black !important;
+  color: lightgreen !important;
+}
+
+.layout {
+  background-color: white !important;
+  color: white;
+}
+
+.Sizebutton {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border: 3px lightgray solid;
+  border-radius: 50%;
+}
+
+.Sizebutton:hover {
+  background-color: black;
+  color: white;
+}
+
+.Star {
+  margin-left: 5px;
+}
+
+.githubbutton {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  background-image: linear-gradient(white, lightgray);
+  border-radius: 5px;
+}
+
+.githubbutton:hover {
+  background-image: linear-gradient(white, lightgreen);
+}
+
+.OrderBy {
+  font-size: 15px !important;
+}
+
+/* Order filter selection CSS  */
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: lightgreen;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  /* color: #ffffff; */
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: lightgreen;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+.Price {
+  font-size: 40px;
+}
+
+.Addtocart {
+  width: 100% !important;
+}
+
+.Addtocart:hover {
+  background-color: lightgreen !important;
+  color: black !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+.line {
+  color: lightgreen !important;
+}
+
+/* Footer Section CSS  */
+#footer {
+  position: absolute;
+  width: 100%;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+  margin-top: 80px;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: lightgreen !important;
+}
+
+footer .column i:hover {
+  color: whitesmoke !important;
+}
+
+.importantlinks h6:hover {
+  position: relative;
+  color: lightgreen !important;
+  cursor: pointer;
+}
+
+#inputform {
+  background-color: blue !important;
+  width: 400px !important;
+  text-align: left !important;
+}
+
+.subscribe input {
+  color: black !important;
+}
+
+.subscribebutton {
+  background-color: lightgreen !important;
+  color: black;
+  font-weight: 500;
+}
+
+.subscribebutton:hover {
+  background-color: black !important;
+  color: whitesmoke !important;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+.items {
+  text-align: center !important;
+  padding: 5px !important;
+  margin: 5px !important;
+  display: grid !important;
+  grid-template-columns: 25% 25% 25% 25% !important;
+  grid-gap: 5px !important;
+  /* background-color: #ff512f !important; */
+}
+
+/* .NewD {
+          visibility: hidden;
+        } */
+
+.Checkbox {
+  background-color: #ff0000 !important;
+  color: #ff0000 !important;
+  height: 50px;
+  width: 50px;
+}
+
+.show {
+  display: block;
+}
+
+/* Cart-Section Styling  */
+
+.cart-sidebar {
+  position: fixed;
+  right: -400px;
+  /* right: 0px; */
+  top: 0;
+  width: 350px;
+  height: 100%;
+  /* background-color: lightgrey; */
+  background-color: #303030;
+  box-shadow: 0 0 35px #04040445;
+  overflow-y: auto;
+  z-index: 100;
+  transition: all ease 0.5s;
+}
+
+.cart-sidebar .cart-title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding: 40px 30px 20px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.cart-title {
+  color: white;
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+
+.cart-sidebar .cart-body {
+  padding: 30px 0;
+}
+
+.cart-sidebar .cart-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.cart-sidebar .cart-item .cart-img {
+  width: 20%;
+  float: left;
+}
+
+.cart-sidebar .cart-item .cart-img img {
+  width: 100%;
+}
+
+.cart-sidebar .cart-item .cart-text {
+  width: 80%;
+  float: left;
+  padding: 0 20px;
+}
+
+.cart-sidebar .cart-item .cart-text span,
+.cart-sidebar .cart-item .cart-text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cart-sidebar .cart-item .cart-text span {
+  color: #ff0000;
+}
+
+.cart-sidebar .cart-item .cart-text .color-primary {
+  color: blue;
+}
+
+.cart-sidebar .cart-btn {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 14px 39px;
+  /* letter-spacing: 4px; */
+  border-radius: 20px;
+  box-shadow: 0 12px 15px #00c2ff6e;
+  margin: 20% 10% 0;
+}
+
+.cart-btn:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.cart-btn {
+  margin-bottom: 50px !important;
+}
+
+.cart-close-icon {
+  /* background-color: green !important; */
+  position: absolute;
+  /* right: 30px; */
+  left: 30px;
+  top: 5px;
+  cursor: pointer;
+  color: white !important;
+}
+
+.Bag {
+  /* color: #ff0000; */
+  margin-left: 3px;
+  /* transform: translateY(10px) !important;
+          margin-bottom: 20px; */
+}
+
+.RemoveItem {
+  color: lightgreen !important;
+  float: right;
+  margin-left: 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.RemoveItem i:hover {
+  color: red !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+.subtotal {
+  color: gray;
+  display: flex;
+}
+
+.subtotal2 {
+  text-align: right;
+}
+
+.ItemCounterCart {
+  width: 40px;
+  z-index: 109;
+  height: 25px;
+}
+
+/* DropDown Menu  */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* For cursor pointer specific CSS property  */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Media Query for MotoG4 and similar Devices 360px  */
+@media (max-width: 360px) {
+  .githubbutton {
+    margin-bottom: 50px;
+  }
+
+  .subscribebutton {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .followus {
+    text-align: center !important;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+  }
+
+  .Newsletter {
+    text-align: center !important;
+  }
+
+  .sizebutton {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .items {
+    text-align: center !important;
+    padding: 5px !important;
+    margin: 5px !important;
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    grid-gap: 10px;
+    /* background-color: #ff512f !important; */
+  }
+
+  .Copyright {
+    text-align: center !important;
+  }
+
+  .cart-body {
+    text-align: center !important;
+  }
+
+  .cart-sidebar .cart-item .cart-img {
+    width: 20%;
+    float: left !important;
+    margin-left: 40%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Query for iPad and similar Devices 768px  */
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .items {
+    text-align: center !important;
+    padding: 5px !important;
+    margin: 5px !important;
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    grid-gap: 10px;
+  }
+  .githubbutton {
+    margin-bottom: 50px;
+  }
+
+  .subscribebutton {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .followus {
+    text-align: center !important;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+  }
+
+  .Newsletter {
+    text-align: center !important;
+  }
+
+  .sizebutton {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .Copyright {
+    text-align: center !important;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .followus {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .followus i {
+    margin: 5px !important;
+  }
+}
+
+/* Size Selection input  */
+
+.inputbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.inputbuttons2 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start !important; */
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.geekmark {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 3px lightgray solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.script span:hover {
+  background-color: black !important;
+  color: white;
+}
+
+.script input:active ~ .geekmark {
+  background-color: black !important;
+  color: black;
+}
+
+.script input:checked ~ .geekmark {
+  background-color: black;
+  color: white !important;
+}
+
+.show {
+  background-color: #ff512f !important;
 }
